@@ -20,12 +20,12 @@ public class MainClass {
 		System.out.println(val2.isValid("20190230"));
 		
 		
-		DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("uuuuMMdd", Locale.US)
+		DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("ddMMuuuu", Locale.US)
 			    .withResolverStyle(ResolverStyle.STRICT);
 			DateValidator validator = new DateValidatorUsingDateTimeFormatter(dateFormatter);
 			        
-			System.out.println((validator.isValid("20190228")));
-			System.out.println((validator.isValid("20190230")));
+			System.out.println((validator.isValid("28022019")));
+			System.out.println((validator.isValid("30022019")));
 		
 
 	}
